@@ -65,9 +65,9 @@
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:18, minZoom:14
-        }).fitBounds([[57.915131939662714,56.32172460510018],[57.928846324358425,56.367005293625716]]);
+        }).fitBounds([[57.91747476957066,56.3329067746692],[57.93118522246376,56.378186325200716]]);
         var hash = new L.Hash(map);
-        map.attributionControl.setPrefix('<a href="https://pgatu.ru/faculties/agrohim/cathedras/soil/nir/" target="_blank">на сайт ФГБОУ ВО Пермский ГАТУ</a> &middot;');
+         map.attributionControl.setPrefix('<a href="https://pgatu.ru/faculties/agrohim/cathedras/soil/nir/" target="_blank">на сайт ФГБОУ ВО Пермский ГАТУ</a> &middot;');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
         L.control.locate({locateOptions: {maxZoom: 19}}).addTo(map);
         var bounds_group = new L.featureGroup([]);
@@ -431,7 +431,7 @@
         function pop_K_8(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <th scope="row">№ поля</th>\
+                        <th scope="row">>№ поля</th>\
                         <td>' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
